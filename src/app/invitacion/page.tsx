@@ -9,6 +9,7 @@ import avion from '@/lib/lottie/lottie_avion1.json'
 import avion2 from '@/lib/lottie/lottie_avion2.json'
 import name from '@/lib/lottie/lottie_selloSeccion1.json'
 import googleMaps from '@/lib/lottie/lottie_googleMaps.json'
+import world from '@/lib/lottie/lottie_selloSeccionCA.json'
 
 export default function Invitacion () {
     return (
@@ -37,10 +38,10 @@ export default function Invitacion () {
                     <LottieAnimation animationData={mapa2} />
                 </div>
 
-                <p className='relative z-10 pl-5 text-8xl font-willmard text-primary mt-5 leading-[3.7rem] tracking-tight italic'>
+                <h3 className='relative z-10 pl-5 text-8xl font-willmard text-primary mt-5 leading-[3.7rem] tracking-tight italic'>
                     Después de
                     <span className='block pl-16'>3 años juntos</span>
-                </p>
+                </h3>
 
                 <LottieAnimation animationData={avion2} className='mt-8' loop={false} />
 
@@ -49,7 +50,7 @@ export default function Invitacion () {
 
             <section className="container mt-32 border-4 border-dotted border-primary p-2 relative bg-[#fefefd]">
                 <img src="/img/pareja.png" alt="Nosotros" />
-                <p className='text-center uppercase text-primary-dark font-abril text-xl mt-5 tracking-widest'>Pasaporte a <br /> nuestra boda</p>
+                <h3 className='text-center uppercase text-primary-dark font-abril text-xl mt-5 tracking-widest'>Pasaporte a <br /> nuestra boda</h3>
 
                 <hr className='border-primary my-4' />
 
@@ -83,9 +84,9 @@ export default function Invitacion () {
 
                 <div className='relative z-10'>
                     <i className="fa-solid fa-location-dot text-5xl text-primary mt-20"></i>
-                    <p className='pl-5 text-8xl font-willmard text-primary mt-1'>
+                    <h3 className='pl-5 text-8xl font-willmard text-primary mt-1'>
                         Escala
-                    </p>
+                    </h3>
                     <p className='text-primary text-3xl font-vijaya'>Santa María Reina de Padralbes</p>
                     <p className='text-primary mt-5 font-aparatija text-2xl'>Carrer Miret i Sans 36,</p>
                     <p className='text-primary font-aparatija text-2xl'>08034, Barcelona</p>
@@ -94,6 +95,26 @@ export default function Invitacion () {
                         <LottieAnimation animationData={googleMaps} className='w-10 mx-auto' />
                     </a>
                 </div>
+            </section>
+
+            <section className="container mt-32 text-center">
+                <div className="relative">
+                    <p className='absolute z-10 bottom-[45%] right-0 left-0 text-center text-4xl font-abril text-primary-dark -rotate-[18deg]'>F <span className='text-accent'>&</span> J</p>
+                    <LottieAnimation animationData={world} />
+                </div>
+
+                <h3 className='pl-5 text-6xl font-willmard text-primary'>
+                    Asistencia
+                </h3>
+                <p className='text-primary font-aparatija text-xl'>Haz click en la imagen del pasaporte para confirmar tu asistencia</p>
+                <i className="fa-solid fa-passport text-4xl text-primary rotate-[16deg] mt-5"></i>
+            </section>
+
+            <section className="container mt-28 text-center">
+                <div className="h-0">
+                    <LottieAnimation animationData={mapa3} />
+                </div>
+
             </section>
         </>
     )
