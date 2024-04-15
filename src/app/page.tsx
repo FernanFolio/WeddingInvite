@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 export default function Home () {
   return (
-    <main className="container flex flex-col items-center justify-center h-screen">
+    <main className="container flex flex-col items-center justify-center h-screen text-center">
       <h1 className='text-center font-parisienne text-4xl'>
         Martín Pedroza García
         <span className='block mt-5 text-4xl'>y</span>

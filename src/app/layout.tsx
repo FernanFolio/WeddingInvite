@@ -22,6 +22,11 @@ export default function RootLayout ({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin='anonymous' />
         <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin='anonymous' />
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Parisienne&display=swap" rel="stylesheet"></link>
+
       </head>
 
       <body className={inter.className}>{children}</body>

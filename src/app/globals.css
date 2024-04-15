@@ -4,14 +4,14 @@
 
 @font-face {
     font-family: 'Vijaya-Regular';
-    src: url('/fonts/Vijaya-Regular.ttf') format('truetype');
+    src: url('/fonts/vijaya/Vijaya-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'MyriadPro-Regular';
-    src: url('/fonts/MYRIADPRO-REGULAR.woff') format('woff');
+    src: url('/fonts/myriad/MYRIADPRO-REGULAR.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
