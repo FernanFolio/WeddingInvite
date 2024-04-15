@@ -56,6 +56,13 @@
 }
 
 @font-face {
+    font-family: 'Willmard-Valiant';
+    src: url('/fonts/willmard/Willmard-Valiant.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Typewriter';
     src: url('/fonts/typewriter/typewcond_regular.otf') format('opentype');
     font-weight: normal;
@@ -76,6 +83,6 @@
 
 @layer utilities {
     .container {
-        @apply max-w-[80%] lg:max-w-[85%] 2xl:max-w-[1442px] mx-auto;
+        @apply max-w-[360px] mx-auto;
     }
 }
