@@ -1,15 +1,19 @@
 /* eslint-disable @next/next/no-img-element */
+'use client'
 
 import { LottieAnimation } from '@/lib/components'
 
 import mapa from '@/lib/lottie/lottie_fondo1.json'
 import mapa2 from '@/lib/lottie/lottie_fondo2.json'
 import mapa3 from '@/lib/lottie/lottie_fondo7.json'
+import mapa4 from '@/lib/lottie/lottie_fondo8.json'
+import mapa5 from '@/lib/lottie/lottie_fondo9.json'
 import avion from '@/lib/lottie/lottie_avion1.json'
 import avion2 from '@/lib/lottie/lottie_avion2.json'
 import name from '@/lib/lottie/lottie_selloSeccion1.json'
 import googleMaps from '@/lib/lottie/lottie_googleMaps.json'
 import world from '@/lib/lottie/lottie_selloSeccionCA.json'
+import balija from '@/lib/lottie/lottie_balija.json'
 
 export default function Invitacion () {
     return (
@@ -48,7 +52,7 @@ export default function Invitacion () {
                 <p className='text-center font-willmard text-6xl xl:text-7xl text-primary mt-20 w-9/12 mx-auto leading-10'>prepara tus maletas y acompáñanos en este viaje</p>
             </section>
 
-            <section className="container mt-32 xl:mt-52 border-4 border-dotted border-primary p-2 pb-8 relative bg-[#fefefd]">
+            <section className="container mt-32 xl:mt-52 border-8 border-dotted border-primary p-2 pb-8 relative bg-[#fefefd]">
                 <img src="/img/pareja.png" alt="Nosotros" />
                 <h3 className='text-center uppercase text-primary-dark font-abril text-xl xl:text-4xl mt-5 tracking-widest'>Pasaporte a <br /> nuestra boda</h3>
 
@@ -119,7 +123,7 @@ export default function Invitacion () {
 
             <section className="container mt-32 xl:mt-80 text-center">
                 <div className="relative">
-                    <p className='absolute z-10 bottom-[45%] right-0 left-0 text-center text-4xl font-abril text-primary-dark -rotate-[18deg]'>F <span className='text-accent'>&</span> J</p>
+                    <p className='absolute z-10 bottom-[45%] right-0 left-0 text-center text-4xl xl:text-6xl font-abril text-primary-dark -rotate-[18deg]'>F <span className='text-accent'>&</span> J</p>
                     <LottieAnimation animationData={world} />
                 </div>
 
@@ -127,7 +131,7 @@ export default function Invitacion () {
                     Asistencia
                 </h3>
                 <p className='text-primary font-aparatija text-xl xl:text-3xl'>Haz click en la imagen del pasaporte para confirmar tu asistencia</p>
-                <i className="fa-solid fa-passport text-4xl xl:text-6xl text-primary rotate-[16deg] mt-5 shadow-xl"></i>
+                <button><i className="fa-solid fa-passport text-4xl xl:text-6xl text-primary rotate-[16deg] mt-5 shadow-xl"></i></button>
             </section>
 
             <section className="container mt-28 text-center">
@@ -135,6 +139,117 @@ export default function Invitacion () {
                     <LottieAnimation animationData={mapa3} />
                 </div>
 
+                <div className="relative z-10 mt-32 xl:mt-52">
+                    <i className="fa-solid fa-gift text-primary text-5xl xl:text-7xl"></i>
+                    <h3 className='pl-5 text-6xl xl:text-9xl font-willmard text-primary'>
+                        Regalo
+                    </h3>
+                    <p className='text-primary font-aparatija text-xl xl:text-3xl mt-5'>Lo más importante es vuestra presencia, pero si deseáis hacernos un regalo, aquí dejamos nuestro número de cuenta</p>
+                    <p className='text-primary font-aparatija text-xl xl:text-3xl mt-5 font-bold'> ES 1111 2222 3333 4444 5555 6666 </p>
+                    <button onClick={() => {
+                        navigator.clipboard.writeText("ES 1111 2222 3333 4444 5555 6666")
+                        alert('Número de cuenta copiado')
+                    }}>
+                        <i className="fa-regular fa-copy text-4xl xl:text-6xl text-primary"></i>
+                    </button>
+                </div>
+
+            </section>
+
+            <section className='container text-center mt-52 xl:mt-80'>
+                <div className='h-0'>
+                    <LottieAnimation animationData={mapa4} />
+                </div>
+
+                <div className='relative z-10'>
+                    <h3 className='pl-5 text-8xl xl:text-9xl font-willmard text-primary mt-20'>
+                        Itinerario
+                    </h3>
+                    <img src="/img/itinerary.png" alt="Itinerario" className='mx-auto' />
+                </div>
+            </section>
+
+            <section className='container text-center mt-52 xl:mt-80'>
+                <div className='h-0'>
+                    <LottieAnimation animationData={mapa5} />
+                </div>
+
+                <div className='relative z-10'>
+                    <h3 className='pl-5 text-8xl xl:text-9xl font-willmard text-primary mt-28'>
+                        Fotos
+                    </h3>
+                    <p className='text-primary font-vijaya italic text-3xl xl:text-[2.5rem] mt-5 w-1/2 mx-auto leading-[1.3]'>
+                        El día de la boda toma muchas fotos y déjanos un bonito y divertido recuerdo haciendo click en el ícono de la cámara
+                    </p>
+                    <a
+                        href='https://photos.google.com/share/AF1QipPOGTeebLlxhf676ScyEAhw_AYQ0wq2S33c1M_2rE7eOGBCN9526sjenONEPEYS3g?pli=1&key=OFVnRTA2WG80T25mZm5zdGFxNl9XX2FBaEhaYmFn'
+                        className="w-24 h-24 rounded-full border-4 border-primary mt-8 mx-auto flex justify-center items-center"
+                        target='_blank'
+                        rel='noopenner noreferrer'
+                    >
+                        <i className="fa-solid fa-camera-retro text-4xl xl:text-6xl text-primary"></i>
+                    </a>
+                </div>
+            </section>
+
+            <section className='container text-center mt-52 xl:mt-80'>
+                <div className='h-0'>
+                    <LottieAnimation animationData={mapa5} />
+                </div>
+
+                <div className='relative z-10 flex flex-col justify-center h-screen'>
+
+                    <i className="fa-solid fa-plane-departure text-4xl xl:text-6xl text-primary"></i>
+                    <p className='text-primary-dark font-vijaya italic text-4xl xl:text-5xl mt-5 w-1/2 mx-auto !leading-[1.3]'>
+                        Cuenta regresiva para iniciar el embarque a la mejor fiesta
+                    </p>
+
+                    <p className='text-primary-dark text-2xl xl:text-3xl mt-8 mx-auto !leading-[1.3]'>Tiempo de festejar!!!</p>
+
+                </div>
+            </section>
+
+            <section className="container xl:mt-52 border-8 border-dotted border-primary p-2 pb-8 relative bg-[#fefefd]">
+                <img src="/img/mapa.png" alt="Mapa" />
+                <img src="/img/pasaporte.png" alt="Pasaporte" className='absolute top-16 left-0 right-0 px-8' />
+                <img src="/img/brujula.png" alt="Pasaporte" className='absolute top-40 xl:top-56 right-0 w-20 xl:w-32' width={120} />
+
+                <h2 className='font-abril text-3xl xl:text-5xl text-primary-dark text-center uppercase mt-6'>Carmen <span className='text-accent'>&</span> Pedro</h2>
+
+
+                <div className='border-y-2 border-primary-dark flex justify-between font-typewriter py-1 px-5 my-5 uppercase'>
+                    <div>
+                        <p className='text-sm xl:text-xl text-yellow-600'>Type</p>
+                        <p className='xl:text-2xl text-blue-950/70 font-bold'>Boda</p>
+                    </div>
+
+                    <div>
+                        <p className='text-sm xl:text-xl text-yellow-600'>Code</p>
+                        <p className='xl:text-2xl text-blue-950/70 font-bold'>Barcelona</p>
+                    </div>
+
+                    <div>
+                        <p className='text-sm xl:text-xl text-yellow-600'>Pasaporte</p>
+                        <p className='xl:text-2xl text-blue-950/70 font-bold'>10072027</p>
+                    </div>
+                </div>
+
+                <p className='text-yellow-600 text-xl xl:text-2xl mt-5 text-center uppercase font-typewriter !leading-[1.8]'>
+                    El único equipaje <br /> que necesitas son las ganas <br /> de pasarlo bien
+                </p>
+
+                <LottieAnimation animationData={balija} className='w-40 mx-auto' loop={false} />
+
+                <p className='text-yellow-600 text-xl xl:text-2xl mt-5 text-center uppercase font-typewriter !leading-[1.8]'>
+                    ¡Te Esperamos!
+                </p>
+
+                <hr className='border-primary border-t-2' />
+
+                <p className='text-yellow-600 text-center font-typewriter text-lg overflow-hidden'>
+                    {"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> "}
+                    {"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> "}
+                </p>
             </section>
         </>
     )
