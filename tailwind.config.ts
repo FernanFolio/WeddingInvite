@@ -11,7 +11,13 @@ const config: Config = {
     fontFamily: {
       parisienne: ["Parisienne", "cursive"],
       vijaya: ['Vijaya-Regular', "sans-serif", "cursive"],
-      myriad: ['MyriadPro-Regular', "sans-serif", "cursive"],
+      myriad: ['MyriadPro-Regular', "sans"],
+      aparatija: ['Aparatija-Regular', "sans-serif"],
+      helvetica: ['Helvetica', "sans"],
+      monoscript: ['Monique-Script', "sans-serif", "cursive"],
+      typewriter: ['Typewriter', "sans"],
+      abril: ['Abril Fatface', "serif"],
+      arima: ['Arima', "system-ui"],
     }
     },
   },
