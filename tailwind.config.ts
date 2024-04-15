@@ -11,7 +11,7 @@ const config: Config = {
       fontFamily: {
         parisienne: ["Parisienne", "cursive"],
         vijaya: ['Vijaya-Regular', "sans-serif", "cursive"],
-        myriad: ['MyriadPro-Regular', "sans"],
+        myriad: ['MyriadPro-Regular', "sans-serif"],
         aparatija: ['Aparatija-Regular', "sans-serif"],
         helvetica: ['Helvetica', "sans"],
         monoscript: ['Monique-Script', "sans-serif", "cursive"],
@@ -22,7 +22,9 @@ const config: Config = {
       },
       colors: {
         light: '#F4F2F3',
-        primary: '#765e3a'
+        primary: '#765e3a',
+        "primary-dark": '#62391b',
+        accent: "#d96e6f"
       }
     },
   },

@@ -15,12 +15,14 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'MyriadPro-Regular';
     src: url('/fonts/myriad/MYRIADPRO-BOLD.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'MyriadPro-Regular';
     src: url('/fonts/myriad/MYRIADPRO-SEMIBOLD.woff') format('woff');
@@ -41,6 +43,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Helvetica';
     src: url('/fonts/helvetica/Helvetica-BOLD.ttf') format('truetype');
@@ -68,17 +71,25 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Typewriter';
     src: url('/fonts/typewriter/typewcond_bold.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Typewriter';
     src: url('/fonts/typewriter/typewcond_semi.otf') format('opentype');
     font-weight: 600;
     font-style: normal;
+}
+
+@layer base {
+    img {
+        max-width: 100%;
+    }
 }
 
 @layer utilities {
