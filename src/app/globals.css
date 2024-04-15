@@ -94,6 +94,6 @@
 
 @layer utilities {
     .container {
-        @apply max-w-[360px] mx-auto;
+        @apply max-w-[375px] xl:max-w-[560px] mx-auto;
     }
 }
