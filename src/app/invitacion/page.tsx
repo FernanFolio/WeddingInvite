@@ -12,10 +12,25 @@ import Section8 from './section8'
 import Section9 from './section9'
 import Section10 from './section10'
 import Section11 from './section11'
+import { useEffect } from 'react'
 
 export default function Invitacion () {
+
+    function playAudio (id: string) {
+        const audio = document.getElementById(id) as HTMLAudioElement
+        audio.play()
+    }
+
+    useEffect(() => {
+        playAudio('tema-principal')
+    }, [])
+
+
     return (
         <>
+            <audio id="tema-principal">
+                <source src={"/sound/tema.mp3"} type="audio/mp3" />
+            </audio>
             <Section1 />
             <Section2 />
             <Section3 />
